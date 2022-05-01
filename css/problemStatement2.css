@@ -1,0 +1,92 @@
+/* body */
+body{
+    font-family: poppins;
+}
+
+/* Bar Chart */
+.bar-chart{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: whitesmoke;
+    margin-top: 10%;
+}
+
+.bar{
+    display: inline-block;
+    width: 30px;
+    height: 300px;
+    margin: 1em;
+    background-color: darkgrey;
+}
+
+.outer-bar{
+    display: inline-block;
+}
+
+.bar-inner{
+    height: 300px;
+    background-color: white;
+}
+
+/* Setting bar animation elements */
+#bar1 .bar-inner{
+    animation-name: resize1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#bar2 .bar-inner{
+    animation-name: resize2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#bar3 .bar-inner{
+    animation-name: resize3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+/* @Keyframes */
+@keyframes resize1{
+    from{
+        height: 100%;
+    }
+    to{
+        height: 70%;
+    }
+}
+
+@keyframes resize2{
+    from{
+        height: 100%;
+    }
+    to{
+        height: 60%;
+    }
+}
+
+@keyframes resize3{
+    from{
+        height: 100%;
+    }
+    to{
+        height: 20%;
+    }
+}
+
+
+/* header & Paragraph */
+
+    h2{
+        margin: auto;
+        text-align: center;
+    }
+
+    p{
+        margin: 0 auto;
+        text-align: center;
+    }
